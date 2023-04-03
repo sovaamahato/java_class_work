@@ -4,9 +4,9 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class Box extends JPanel implements ActionListener {
-
+    JButton b1=new JButton("play");
     Box() {
-        JButton b1=new JButton("play");
+
         b1.addActionListener(this);
         b1.setBounds(20,20,100,50);
         add(b1);
@@ -55,6 +55,7 @@ public class Box extends JPanel implements ActionListener {
     public void actionPerformed(ActionEvent e) {
         System.out.println("clicked");
         if(e.getSource()==b1){
+
 
         }
     }
