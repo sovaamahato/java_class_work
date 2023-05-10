@@ -18,6 +18,8 @@ public class CalculatorGUI implements ActionListener {
     JButton subBtn =new JButton("Sub");
     JButton divBtn =new JButton("Div");
 
+    JButton clrBtn =new JButton("Clear");
+
 //    Scanner input =new Scanner(System.in);
 
 
@@ -60,6 +62,10 @@ public class CalculatorGUI implements ActionListener {
         divBtn.setBounds(330,190,70,50);
         divBtn.addActionListener(this);
         frame.add(divBtn);
+//for clear
+        clrBtn.setBounds(170,300,70,50);
+        clrBtn.addActionListener(this);
+        frame.add(clrBtn);
 
 
 
@@ -103,6 +109,15 @@ public class CalculatorGUI implements ActionListener {
             int num2= Integer.parseInt(t2.getText());
             int result = num1/num2;
             t3.setText(String.valueOf(result));
+        }
+
+        if(e.getSource()==clrBtn){
+//            int num1= Integer.parseInt(t1.getText());
+//            int num2= Integer.parseInt(t2.getText());
+//            int result = num1/num2;
+            t1.setText(" ");
+            t2.setText(" ");
+            t3.setText(" ");
         }
 
 

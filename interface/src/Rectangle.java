@@ -3,7 +3,7 @@ public class Rectangle implements Shape, AnotherShape{
     public void printArea(){
         System.out.println("from shape");
     }
-    ,
+    
 
     @Override
     public void getName() {

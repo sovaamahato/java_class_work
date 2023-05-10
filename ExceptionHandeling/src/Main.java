@@ -4,7 +4,7 @@ public class Main {
             int divider =0;
             int value =100;
             int result = value/divider;
-            System.out.println("Result is :"+result);
+            System.out.println("Result is :"+ result);
             //when you already know yo thau ma error aauxa you can use ---throw
 //            if(divider==0)
 //            {
